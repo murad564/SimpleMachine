@@ -1,4 +1,4 @@
-namespace Food_Machine
+namespace SimpleMachine
 {
     internal static class Program
     {
