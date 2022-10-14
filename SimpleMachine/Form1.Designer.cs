@@ -1,4 +1,4 @@
-﻿namespace Food_Machine
+namespace SimpleMachine
 {
     partial class Form1
     {
@@ -29,26 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_Bounty = new System.Windows.Forms.Button();
             this.btn_Cola = new System.Windows.Forms.Button();
             this.btn_Fanta = new System.Windows.Forms.Button();
             this.btn_Pepsi = new System.Windows.Forms.Button();
-            this.btn_Albeni = new System.Windows.Forms.Button();
-            this.btn_FreshFries = new System.Windows.Forms.Button();
+            this.btn_Lays = new System.Windows.Forms.Button();
             this.btn_Tutku = new System.Windows.Forms.Button();
             this.btn_Maxito = new System.Windows.Forms.Button();
-            this.btn_Snickers = new System.Windows.Forms.Button();
-            this.btn_KitKat = new System.Windows.Forms.Button();
+            this.btn_Olala = new System.Windows.Forms.Button();
             this.btn_FuseTea = new System.Windows.Forms.Button();
             this.btn_IceTea = new System.Windows.Forms.Button();
-            this.Bounty = new System.Windows.Forms.Label();
             this.CocaCola = new System.Windows.Forms.Label();
             this.Fanta = new System.Windows.Forms.Label();
-            this.Albeni = new System.Windows.Forms.Label();
             this.FreshFries = new System.Windows.Forms.Label();
-            this.Tutku = new System.Windows.Forms.Label();
-            this.Snickers = new System.Windows.Forms.Label();
-            this.Kitkat = new System.Windows.Forms.Label();
+            this.etipuf = new System.Windows.Forms.Label();
+            this.Olala = new System.Windows.Forms.Label();
             this.FuseTea = new System.Windows.Forms.Label();
             this.Pepsi = new System.Windows.Forms.Label();
             this.Maxito = new System.Windows.Forms.Label();
@@ -60,11 +54,10 @@
             this.Cash = new System.Windows.Forms.TextBox();
             this.onmanat_btn = new System.Windows.Forms.Button();
             this.besmanat_btn = new System.Windows.Forms.Button();
-            this.birmanat_btn = new System.Windows.Forms.Button();
             this.x = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Recept = new System.Windows.Forms.ListBox();
+            this.Recept_lstbx = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.MoneyEntered = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
@@ -74,53 +67,35 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.panel1.Controls.Add(this.btn_Bounty);
             this.panel1.Controls.Add(this.btn_Cola);
             this.panel1.Controls.Add(this.btn_Fanta);
             this.panel1.Controls.Add(this.btn_Pepsi);
-            this.panel1.Controls.Add(this.btn_Albeni);
-            this.panel1.Controls.Add(this.btn_FreshFries);
+            this.panel1.Controls.Add(this.btn_Lays);
             this.panel1.Controls.Add(this.btn_Tutku);
             this.panel1.Controls.Add(this.btn_Maxito);
-            this.panel1.Controls.Add(this.btn_Snickers);
-            this.panel1.Controls.Add(this.btn_KitKat);
+            this.panel1.Controls.Add(this.btn_Olala);
             this.panel1.Controls.Add(this.btn_FuseTea);
             this.panel1.Controls.Add(this.btn_IceTea);
-            this.panel1.Controls.Add(this.Bounty);
             this.panel1.Controls.Add(this.CocaCola);
             this.panel1.Controls.Add(this.Fanta);
-            this.panel1.Controls.Add(this.Albeni);
             this.panel1.Controls.Add(this.FreshFries);
-            this.panel1.Controls.Add(this.Tutku);
-            this.panel1.Controls.Add(this.Snickers);
-            this.panel1.Controls.Add(this.Kitkat);
+            this.panel1.Controls.Add(this.etipuf);
+            this.panel1.Controls.Add(this.Olala);
             this.panel1.Controls.Add(this.FuseTea);
             this.panel1.Controls.Add(this.Pepsi);
             this.panel1.Controls.Add(this.Maxito);
             this.panel1.Controls.Add(this.IceTea);
             this.panel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.panel1.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.panel1.Location = new System.Drawing.Point(18, 9);
+            this.panel1.Location = new System.Drawing.Point(12, 8);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(569, 348);
+            this.panel1.Size = new System.Drawing.Size(482, 348);
             this.panel1.TabIndex = 0;
-            
-            // 
-            // btn_Bounty
-            // 
-            this.btn_Bounty.Location = new System.Drawing.Point(444, 291);
-            this.btn_Bounty.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Bounty.Name = "btn_Bounty";
-            this.btn_Bounty.Size = new System.Drawing.Size(82, 22);
-            this.btn_Bounty.TabIndex = 31;
-            this.btn_Bounty.Text = "2.10";
-            this.btn_Bounty.UseVisualStyleBackColor = true;
-            this.btn_Bounty.Click += new System.EventHandler(this.btn_IceTea_Click);
             // 
             // btn_Cola
             // 
-            this.btn_Cola.Location = new System.Drawing.Point(309, 291);
+            this.btn_Cola.Location = new System.Drawing.Point(353, 291);
             this.btn_Cola.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Cola.Name = "btn_Cola";
             this.btn_Cola.Size = new System.Drawing.Size(82, 22);
@@ -131,7 +106,7 @@
             // 
             // btn_Fanta
             // 
-            this.btn_Fanta.Location = new System.Drawing.Point(176, 291);
+            this.btn_Fanta.Location = new System.Drawing.Point(219, 291);
             this.btn_Fanta.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Fanta.Name = "btn_Fanta";
             this.btn_Fanta.Size = new System.Drawing.Size(82, 22);
@@ -142,7 +117,7 @@
             // 
             // btn_Pepsi
             // 
-            this.btn_Pepsi.Location = new System.Drawing.Point(45, 291);
+            this.btn_Pepsi.Location = new System.Drawing.Point(79, 291);
             this.btn_Pepsi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Pepsi.Name = "btn_Pepsi";
             this.btn_Pepsi.Size = new System.Drawing.Size(82, 22);
@@ -151,31 +126,20 @@
             this.btn_Pepsi.UseVisualStyleBackColor = true;
             this.btn_Pepsi.Click += new System.EventHandler(this.btn_IceTea_Click);
             // 
-            // btn_Albeni
+            // btn_Lays
             // 
-            this.btn_Albeni.Location = new System.Drawing.Point(444, 176);
-            this.btn_Albeni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Albeni.Name = "btn_Albeni";
-            this.btn_Albeni.Size = new System.Drawing.Size(82, 22);
-            this.btn_Albeni.TabIndex = 27;
-            this.btn_Albeni.Text = "0.40";
-            this.btn_Albeni.UseVisualStyleBackColor = true;
-            this.btn_Albeni.Click += new System.EventHandler(this.btn_IceTea_Click);
-            // 
-            // btn_FreshFries
-            // 
-            this.btn_FreshFries.Location = new System.Drawing.Point(309, 176);
-            this.btn_FreshFries.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_FreshFries.Name = "btn_FreshFries";
-            this.btn_FreshFries.Size = new System.Drawing.Size(82, 22);
-            this.btn_FreshFries.TabIndex = 26;
-            this.btn_FreshFries.Text = "2";
-            this.btn_FreshFries.UseVisualStyleBackColor = true;
-            this.btn_FreshFries.Click += new System.EventHandler(this.btn_IceTea_Click);
+            this.btn_Lays.Location = new System.Drawing.Point(353, 168);
+            this.btn_Lays.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Lays.Name = "btn_Lays";
+            this.btn_Lays.Size = new System.Drawing.Size(82, 22);
+            this.btn_Lays.TabIndex = 26;
+            this.btn_Lays.Text = "2";
+            this.btn_Lays.UseVisualStyleBackColor = true;
+            this.btn_Lays.Click += new System.EventHandler(this.btn_IceTea_Click);
             // 
             // btn_Tutku
             // 
-            this.btn_Tutku.Location = new System.Drawing.Point(176, 176);
+            this.btn_Tutku.Location = new System.Drawing.Point(219, 176);
             this.btn_Tutku.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Tutku.Name = "btn_Tutku";
             this.btn_Tutku.Size = new System.Drawing.Size(82, 22);
@@ -186,7 +150,7 @@
             // 
             // btn_Maxito
             // 
-            this.btn_Maxito.Location = new System.Drawing.Point(45, 176);
+            this.btn_Maxito.Location = new System.Drawing.Point(79, 176);
             this.btn_Maxito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Maxito.Name = "btn_Maxito";
             this.btn_Maxito.Size = new System.Drawing.Size(82, 22);
@@ -195,31 +159,20 @@
             this.btn_Maxito.UseVisualStyleBackColor = true;
             this.btn_Maxito.Click += new System.EventHandler(this.btn_IceTea_Click);
             // 
-            // btn_Snickers
+            // btn_Olala
             // 
-            this.btn_Snickers.Location = new System.Drawing.Point(444, 79);
-            this.btn_Snickers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_Snickers.Name = "btn_Snickers";
-            this.btn_Snickers.Size = new System.Drawing.Size(82, 22);
-            this.btn_Snickers.TabIndex = 23;
-            this.btn_Snickers.Text = "0.70";
-            this.btn_Snickers.UseVisualStyleBackColor = true;
-            this.btn_Snickers.Click += new System.EventHandler(this.btn_IceTea_Click);
-            // 
-            // btn_KitKat
-            // 
-            this.btn_KitKat.Location = new System.Drawing.Point(309, 79);
-            this.btn_KitKat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btn_KitKat.Name = "btn_KitKat";
-            this.btn_KitKat.Size = new System.Drawing.Size(82, 22);
-            this.btn_KitKat.TabIndex = 22;
-            this.btn_KitKat.Text = "0.60";
-            this.btn_KitKat.UseVisualStyleBackColor = true;
-            this.btn_KitKat.Click += new System.EventHandler(this.btn_IceTea_Click);
+            this.btn_Olala.Location = new System.Drawing.Point(353, 68);
+            this.btn_Olala.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btn_Olala.Name = "btn_Olala";
+            this.btn_Olala.Size = new System.Drawing.Size(82, 22);
+            this.btn_Olala.TabIndex = 22;
+            this.btn_Olala.Text = "0.60";
+            this.btn_Olala.UseVisualStyleBackColor = true;
+            this.btn_Olala.Click += new System.EventHandler(this.btn_IceTea_Click);
             // 
             // btn_FuseTea
             // 
-            this.btn_FuseTea.Location = new System.Drawing.Point(176, 79);
+            this.btn_FuseTea.Location = new System.Drawing.Point(219, 66);
             this.btn_FuseTea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_FuseTea.Name = "btn_FuseTea";
             this.btn_FuseTea.Size = new System.Drawing.Size(82, 22);
@@ -230,7 +183,7 @@
             // 
             // btn_IceTea
             // 
-            this.btn_IceTea.Location = new System.Drawing.Point(45, 79);
+            this.btn_IceTea.Location = new System.Drawing.Point(79, 78);
             this.btn_IceTea.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_IceTea.Name = "btn_IceTea";
             this.btn_IceTea.Size = new System.Drawing.Size(82, 22);
@@ -239,21 +192,11 @@
             this.btn_IceTea.UseVisualStyleBackColor = true;
             this.btn_IceTea.Click += new System.EventHandler(this.btn_IceTea_Click);
             // 
-            // Bounty
-            // 
-            this.Bounty.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Bounty.ForeColor = System.Drawing.Color.Snow;
-            this.Bounty.Location = new System.Drawing.Point(425, 239);
-            this.Bounty.Name = "Bounty";
-            this.Bounty.Size = new System.Drawing.Size(115, 90);
-            this.Bounty.TabIndex = 19;
-            this.Bounty.Text = "        Ulduz ";
-            // 
             // CocaCola
             // 
             this.CocaCola.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CocaCola.ForeColor = System.Drawing.Color.Snow;
-            this.CocaCola.Location = new System.Drawing.Point(291, 239);
+            this.CocaCola.Location = new System.Drawing.Point(334, 239);
             this.CocaCola.Name = "CocaCola";
             this.CocaCola.Size = new System.Drawing.Size(115, 90);
             this.CocaCola.TabIndex = 18;
@@ -263,68 +206,48 @@
             // 
             this.Fanta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Fanta.ForeColor = System.Drawing.Color.Snow;
-            this.Fanta.Location = new System.Drawing.Point(159, 239);
+            this.Fanta.Location = new System.Drawing.Point(203, 239);
             this.Fanta.Name = "Fanta";
             this.Fanta.Size = new System.Drawing.Size(115, 90);
             this.Fanta.TabIndex = 17;
             this.Fanta.Text = "          Coke";
             // 
-            // Albeni
-            // 
-            this.Albeni.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Albeni.ForeColor = System.Drawing.Color.Snow;
-            this.Albeni.Location = new System.Drawing.Point(425, 125);
-            this.Albeni.Name = "Albeni";
-            this.Albeni.Size = new System.Drawing.Size(115, 90);
-            this.Albeni.TabIndex = 16;
-            this.Albeni.Text = "        Albeni";
-            // 
             // FreshFries
             // 
             this.FreshFries.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FreshFries.ForeColor = System.Drawing.Color.Snow;
-            this.FreshFries.Location = new System.Drawing.Point(291, 125);
+            this.FreshFries.Location = new System.Drawing.Point(334, 125);
             this.FreshFries.Name = "FreshFries";
             this.FreshFries.Size = new System.Drawing.Size(115, 90);
             this.FreshFries.TabIndex = 15;
             this.FreshFries.Text = "Lays";
             // 
-            // Tutku
+            // etipuf
             // 
-            this.Tutku.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Tutku.ForeColor = System.Drawing.Color.Snow;
-            this.Tutku.Location = new System.Drawing.Point(159, 125);
-            this.Tutku.Name = "Tutku";
-            this.Tutku.Size = new System.Drawing.Size(115, 90);
-            this.Tutku.TabIndex = 14;
-            this.Tutku.Text = "        Eti-Puf";
-            // 
-            // Snickers
-            // 
-            this.Snickers.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Snickers.ForeColor = System.Drawing.Color.Snow;
-            this.Snickers.Location = new System.Drawing.Point(425, 21);
-            this.Snickers.Name = "Snickers";
-            this.Snickers.Size = new System.Drawing.Size(115, 90);
-            this.Snickers.TabIndex = 13;
-            this.Snickers.Text = "        Snickers";
+            this.etipuf.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.etipuf.ForeColor = System.Drawing.Color.Snow;
+            this.etipuf.Location = new System.Drawing.Point(203, 125);
+            this.etipuf.Name = "etipuf";
+            this.etipuf.Size = new System.Drawing.Size(115, 90);
+            this.etipuf.TabIndex = 14;
+            this.etipuf.Text = "        Eti-Puf";
             // 
             // Kitkat
             // 
-            this.Kitkat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Kitkat.ForeColor = System.Drawing.Color.MistyRose;
-            this.Kitkat.Location = new System.Drawing.Point(291, 21);
-            this.Kitkat.Name = "Kitkat";
-            this.Kitkat.Size = new System.Drawing.Size(115, 90);
-            this.Kitkat.TabIndex = 12;
-            this.Kitkat.Text = "Olala";
-            
+            this.Olala.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Olala.ForeColor = System.Drawing.Color.MistyRose;
+            this.Olala.Location = new System.Drawing.Point(334, 21);
+            this.Olala.Name = "Kitkat";
+            this.Olala.Size = new System.Drawing.Size(115, 90);
+            this.Olala.TabIndex = 12;
+            this.Olala.Text = "Olala";
+            this.Olala.Click += new System.EventHandler(this.Kitkat_Click);
             // 
             // FuseTea
             // 
             this.FuseTea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FuseTea.ForeColor = System.Drawing.Color.Snow;
-            this.FuseTea.Location = new System.Drawing.Point(159, 21);
+            this.FuseTea.Location = new System.Drawing.Point(203, 21);
             this.FuseTea.Name = "FuseTea";
             this.FuseTea.Size = new System.Drawing.Size(115, 90);
             this.FuseTea.TabIndex = 11;
@@ -334,9 +257,9 @@
             // 
             this.Pepsi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pepsi.ForeColor = System.Drawing.Color.Snow;
-            this.Pepsi.Location = new System.Drawing.Point(27, 239);
+            this.Pepsi.Location = new System.Drawing.Point(55, 238);
             this.Pepsi.Name = "Pepsi";
-            this.Pepsi.Size = new System.Drawing.Size(115, 90);
+            this.Pepsi.Size = new System.Drawing.Size(125, 91);
             this.Pepsi.TabIndex = 7;
             this.Pepsi.Text = "         Pepsi";
             // 
@@ -344,9 +267,9 @@
             // 
             this.Maxito.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Maxito.ForeColor = System.Drawing.Color.MistyRose;
-            this.Maxito.Location = new System.Drawing.Point(27, 125);
+            this.Maxito.Location = new System.Drawing.Point(55, 125);
             this.Maxito.Name = "Maxito";
-            this.Maxito.Size = new System.Drawing.Size(115, 90);
+            this.Maxito.Size = new System.Drawing.Size(125, 90);
             this.Maxito.TabIndex = 6;
             this.Maxito.Text = "      Bizon";
             // 
@@ -354,9 +277,9 @@
             // 
             this.IceTea.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.IceTea.ForeColor = System.Drawing.Color.Snow;
-            this.IceTea.Location = new System.Drawing.Point(27, 21);
+            this.IceTea.Location = new System.Drawing.Point(55, 21);
             this.IceTea.Name = "IceTea";
-            this.IceTea.Size = new System.Drawing.Size(115, 90);
+            this.IceTea.Size = new System.Drawing.Size(125, 90);
             this.IceTea.TabIndex = 5;
             this.IceTea.Text = "     7-up";
             // 
@@ -369,18 +292,17 @@
             this.panel2.Controls.Add(this.Cash);
             this.panel2.Controls.Add(this.onmanat_btn);
             this.panel2.Controls.Add(this.besmanat_btn);
-            this.panel2.Controls.Add(this.birmanat_btn);
             this.panel2.Controls.Add(this.x);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.Recept);
+            this.panel2.Controls.Add(this.Recept_lstbx);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.MoneyEntered);
             this.panel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.panel2.Location = new System.Drawing.Point(609, 9);
+            this.panel2.Location = new System.Drawing.Point(509, 9);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(438, 348);
+            this.panel2.Size = new System.Drawing.Size(538, 348);
             this.panel2.TabIndex = 1;
             // 
             // button3
@@ -408,9 +330,9 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(20, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
+            this.label2.Size = new System.Drawing.Size(51, 15);
             this.label2.TabIndex = 10;
-            this.label2.Text = "Umumi: ";
+            this.label2.Text = "General";
             // 
             // Cash
             // 
@@ -424,10 +346,10 @@
             // 
             // onmanat_btn
             // 
-            this.onmanat_btn.Location = new System.Drawing.Point(228, 91);
+            this.onmanat_btn.Location = new System.Drawing.Point(177, 103);
             this.onmanat_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.onmanat_btn.Name = "onmanat_btn";
-            this.onmanat_btn.Size = new System.Drawing.Size(89, 98);
+            this.onmanat_btn.Size = new System.Drawing.Size(140, 86);
             this.onmanat_btn.TabIndex = 8;
             this.onmanat_btn.Text = "10";
             this.onmanat_btn.UseVisualStyleBackColor = true;
@@ -435,25 +357,14 @@
             // 
             // besmanat_btn
             // 
-            this.besmanat_btn.Location = new System.Drawing.Point(124, 91);
+            this.besmanat_btn.Location = new System.Drawing.Point(20, 103);
             this.besmanat_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.besmanat_btn.Name = "besmanat_btn";
-            this.besmanat_btn.Size = new System.Drawing.Size(89, 98);
+            this.besmanat_btn.Size = new System.Drawing.Size(142, 86);
             this.besmanat_btn.TabIndex = 7;
             this.besmanat_btn.Text = "5";
             this.besmanat_btn.UseVisualStyleBackColor = true;
             this.besmanat_btn.Click += new System.EventHandler(this.birmanat_btn_Click);
-            // 
-            // birmanat_btn
-            // 
-            this.birmanat_btn.Location = new System.Drawing.Point(20, 91);
-            this.birmanat_btn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.birmanat_btn.Name = "birmanat_btn";
-            this.birmanat_btn.Size = new System.Drawing.Size(89, 98);
-            this.birmanat_btn.TabIndex = 6;
-            this.birmanat_btn.Text = "1";
-            this.birmanat_btn.UseVisualStyleBackColor = true;
-            this.birmanat_btn.Click += new System.EventHandler(this.birmanat_btn_Click);
             // 
             // x
             // 
@@ -462,7 +373,7 @@
             this.x.Name = "x";
             this.x.Size = new System.Drawing.Size(82, 56);
             this.x.TabIndex = 5;
-            this.x.Text = "Odenis";
+            this.x.Text = "Pay";
             this.x.UseVisualStyleBackColor = true;
             this.x.Click += new System.EventHandler(this.x_Click);
             // 
@@ -473,7 +384,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(82, 22);
             this.button2.TabIndex = 4;
-            this.button2.Text = "Sil";
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -484,21 +395,20 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 22);
             this.button1.TabIndex = 3;
-            this.button1.Text = "Legv etmek";
+            this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Recept
+            // Recept_lstbx
             // 
-            this.Recept.BackColor = System.Drawing.Color.LightSalmon;
-            this.Recept.FormattingEnabled = true;
-            this.Recept.ItemHeight = 15;
-            this.Recept.Location = new System.Drawing.Point(20, 193);
-            this.Recept.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Recept.Name = "Recept";
-            this.Recept.Size = new System.Drawing.Size(142, 154);
-            this.Recept.TabIndex = 2;
-            
+            this.Recept_lstbx.BackColor = System.Drawing.Color.LightSalmon;
+            this.Recept_lstbx.FormattingEnabled = true;
+            this.Recept_lstbx.ItemHeight = 15;
+            this.Recept_lstbx.Location = new System.Drawing.Point(20, 193);
+            this.Recept_lstbx.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Recept_lstbx.Name = "Recept_lstbx";
+            this.Recept_lstbx.Size = new System.Drawing.Size(142, 154);
+            this.Recept_lstbx.TabIndex = 2;
             // 
             // label1
             // 
@@ -506,9 +416,9 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(20, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 15);
+            this.label1.Size = new System.Drawing.Size(97, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Pulu daxil edin";
+            this.label1.Text = "Enter the money";
             // 
             // MoneyEntered
             // 
@@ -540,26 +450,20 @@
         #endregion
 
         private Panel panel1;
-        private Button btn_Bounty;
         private Button btn_Cola;
         private Button btn_Fanta;
         private Button btn_Pepsi;
-        private Button btn_Albeni;
-        private Button btn_FreshFries;
+        private Button btn_Lays;
         private Button btn_Tutku;
         private Button btn_Maxito;
-        private Button btn_Snickers;
-        private Button btn_KitKat;
+        private Button btn_Olala;
         private Button btn_FuseTea;
         private Button btn_IceTea;
-        private Label Bounty;
         private Label CocaCola;
         private Label Fanta;
-        private Label Albeni;
         private Label FreshFries;
-        private Label Tutku;
-        private Label Snickers;
-        private Label Kitkat;
+        private Label etipuf;
+        private Label Olala;
         private Label FuseTea;
         private Label Pepsi;
         private Label Maxito;
@@ -570,12 +474,12 @@
         private Button x;
         private Button button2;
         private Button button1;
-        private ListBox Recept;
+        private ListBox Recept_lstbx;
         private Button onmanat_btn;
         private Button besmanat_btn;
-        private Button birmanat_btn;
         private Label label2;
         private TextBox Cash;
+        private Label label3;
         private Button button3;
         private TextBox LoadRecept_txt;
     }
