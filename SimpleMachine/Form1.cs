@@ -108,9 +108,6 @@ namespace SimpleMachine
 
         }
 
-        private void Kitkat_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
     }
 }
